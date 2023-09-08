@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - c programmingis awesome
- * return: Always 0 (Success)
+ * main - c programming is awesome
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
