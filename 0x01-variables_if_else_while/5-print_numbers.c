@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
- * main - This is the function of the task
+ * main - This is the function for the task
  * Return: Always 0
  */
 int main(void)
 {
-	int 1;
+	int a;
 
-	for (1 = 0; 1 <= 9; 1++)
-	{
-	printf(1)
-	}
+	for (a = 0; a < 9; a++)
+	printf("%d", 1);
+	putchar('\n');
 	return (0);
 }
