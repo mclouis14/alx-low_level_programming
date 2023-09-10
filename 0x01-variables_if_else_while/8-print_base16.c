@@ -5,16 +5,12 @@
  */
 int main(void)
 {
-	int a;
+	int i;
 
-	for (a = 0; a < 16; a++)
-	{
-	if (a < 10)
-	putchar('0' + a);
-	}
-	{
-	putchar('f' + (a - 10));
-	}
+	for (i = 0; i < 16; i++)
+		putchar(i);
+	for (i = 'a'; i <= 'f'; i++)
+		putchar(i);
 	putchar('\n');
 	return (0);
 }
