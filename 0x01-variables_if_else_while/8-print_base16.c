@@ -12,7 +12,9 @@ int main(void)
 	if (a < 10)
 	putchar('0' + a);
 	}
+	{
 	putchar('f' + (a - 10));
+	}
 	putchar('\n');
 	return (0);
 }
