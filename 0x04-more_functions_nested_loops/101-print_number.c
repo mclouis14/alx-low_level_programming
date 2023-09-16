@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_number - Function prints an integer
- * @n: The integer to print
+ * print_number - Function prints an integer.
+ * @n: The integer to prints.
  * Return: Nothing!
  */
 
@@ -22,5 +22,5 @@ void print_number(int n)
 	a /= 10;
 	if (a != 0)
 	print_number(a);
-	_putchar((unsigned int) a % 10 + '0');
+	_putchar((unsigned int) n % 10 + '0');
 }
