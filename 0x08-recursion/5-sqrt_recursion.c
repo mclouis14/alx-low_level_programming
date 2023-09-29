@@ -2,15 +2,15 @@
 
 /**
  * _sqrt_a - returns natural square root of number
- * @n: input
- * @c: iterator
+ * @a: input
+ * @b: iterator
  * Return: square root or -1
  */
 int _sqrt_a(int a, int b)
 {
 	if (b * b == a)
 	{
-	       return (b);
+		return (b);
 	}
 	else if (b * b > a)
 	{
