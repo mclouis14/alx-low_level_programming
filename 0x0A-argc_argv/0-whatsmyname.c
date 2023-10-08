@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * whatsmynmae - Program prints its name, followed by new line
- * @argc: input
- * @argv:input
- * Return: 0
+ * main - Program prints its name, followed by new line
+ * @argc: number of arguements
+ * @argv: array of arguements
+ * Return: Always 0
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	if (argc >= 1)
 	{
@@ -16,5 +16,6 @@ int main(int argc, char *argv[])
 	{
 		printf("program name could not be determined.\n");
 	}
+
 	return (0);
 }
