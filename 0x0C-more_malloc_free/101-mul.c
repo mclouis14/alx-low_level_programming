@@ -1,30 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <ctype.h>
 #include "main.h"
 /**
- * isDigitString - Check if string is composed of digits
- * @str: input
- * Return: false if digit not found and true if digit is found
- */
-bool isDigitString(const char *str)
-{
-	while (*str)
-	{
-		if (!isdigit(*str))
-		{
-			return (false);
-		}
-		str++;
-	}
-	return (true);
-}
-/**
- * multiply - perform multiplication
+ * multiply - Function to perform multiplication
  * @num1: input
  * @num2: input
- * Return: result of multiplication
+ * Return: result of num1 and num2
  */
 int multiply(int num1, int num2)
 {
@@ -39,8 +21,8 @@ int multiply(int num1, int num2)
  */
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
 	char *num1_str, *num2_str;
+	int i, num1, num2, result;
 
 	if (argc != 3)
 	{
@@ -49,10 +31,21 @@ int main(int argc, char *argv[])
 	}
 	num1_str = argv[1];
 	num2_str = argv[2];
-	if (!isDigitString(num1_str) || !isDigitString(num2_str))
+	for (i = 0; num1_str[i] != '\0'; i++)
 	{
-		printf("Error\n");
-		return (98);
+		if (!isdigit(num1_str[i]))
+		{
+			printf("Error\n");
+			return (98);
+		}
+	}
+	for (i = 0; num2_str[i] != '\0'; i++)
+	{
+		if (!isdigit(num2_str[i]))
+		{
+			printf("Error\n");
+			return (98);
+		}
 	}
 	num1 = atoi(num1_str);
 	num2 = atoi(num2_str);
