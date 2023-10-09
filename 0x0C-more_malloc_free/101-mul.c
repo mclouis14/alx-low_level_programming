@@ -6,7 +6,7 @@
 /**
  * isDigitString - Check if string is composed of digits
  * @str: input
- * Return: 0
+ * Return: false if digit not found and true if digit is found
  */
 bool isDigitString(const char *str)
 {
