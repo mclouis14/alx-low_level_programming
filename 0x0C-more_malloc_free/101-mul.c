@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main.h"
 /**
  * multiply - Function to perform multiplication
  * @num1: input
  * @num2: input
- * Return: result of num1 and num2
+ * Return: result of num1 and num2.
  */
 int multiply(int num1, int num2)
 {
