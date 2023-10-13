@@ -4,6 +4,7 @@
 /**
  * print_all - Prints anything
  * @format: lists types of arguments passed to the function
+ * Return: any arguments given based on format specifier
  */
 void print_all(const char * const format, ...)
 {
@@ -31,7 +32,7 @@ void print_all(const char * const format, ...)
 					break;
 				case 's':
 					str = va_arg(args, char *);
-					if (!str)
+					if (str == NULL)
 						str = "(nil)";
 					printf("%s%s", on, str);
 					break;
