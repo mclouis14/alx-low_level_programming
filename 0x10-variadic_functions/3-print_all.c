@@ -43,6 +43,7 @@ void print_all(const char * const format, ...)
 			c++;
 		}
 	}
+
 	va_end(args);
 	printf("\n");
 }
