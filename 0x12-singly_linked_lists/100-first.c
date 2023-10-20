@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void startup_message(void) __attribute__((constructor));
+void startup_message(void) __attribute__ ((constructor));
 
 /**
  * startup_message - The function will be executed before the main.
