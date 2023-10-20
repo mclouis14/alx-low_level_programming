@@ -1,4 +1,4 @@
-#include "lists.h"
+#include <stdio.h>
 
 void startup_message(void) __attribute__((constructor));
 
