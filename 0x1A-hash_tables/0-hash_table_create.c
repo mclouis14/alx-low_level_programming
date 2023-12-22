@@ -2,9 +2,9 @@
 
 /**
  * hash_table_create - Creates a new hash table.
- * @size: Size of the array (number of buckets) in the hash table.
+ * @size: Size of the array in the hash table.
  *
- * Return: A pointer to the newly created hash table or NULL on failure.
+ * Return: A pointer to the newly created hash table or NULL if error occurs.
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
